@@ -5,8 +5,15 @@ import ChatPeoplesData from '../data/cortexlink.json';
 import Messages from '../components/Messages';
 
 function MessagesPage() {
+  const [peoples, setPeoples] = useState(ChatPeoplesData.ChatPeoples)
+  //handle user click 
+  const handleClick = (index) => {
+    const updateUser = peoples.filter((element, id) => {
+      return index === id
+    })
+    setPeoples(updateUser)
+  }
 
-  const [peoples] = useState(ChatPeoplesData.ChatPeoples)
   return (
     <>
       <Wrapper>
@@ -17,12 +24,12 @@ function MessagesPage() {
 
           <div className="my-12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-10">
             <div className="chat__contacts col-span-1 bg-white rounded-xl p-5 box-border">
-              <h3 className="text-lg text-blue-700 font-bold py-4">All Messages</h3>
+              <h3 className="text-lg text-blue-700 font-bold py-4" onClick={() => setPeoples(ChatPeoplesData.ChatPeoples)}>All Messages</h3>
               <div className="chat__all__peoples flex flex-row xl:flex-col lg:flex-col 2xl:flex-col h-66 xl:h-5/6 2xl:h-5/6 overflow-scroll">
                 {peoples.map((people, index) => {
                   return (
                     <>
-                      <div className="chat__people flex flex-row space-x-3" key={people.id} onClick={() => alert("kabid")}>
+                      <div className="chat__people flex flex-row space-x-3 cursor-pointer" key={people.id} onClick={() => handleClick(index)}>
                         <img className="w-16 h-16 rounded-full mb-3 object-cover mr-2" src={people.image} alt="" />
                         <div className="flex-col hidden xl:flex 2xl:flex">
                           <h1 className="text-gray-700 font-semibold">{people.name}</h1>
@@ -33,10 +40,11 @@ function MessagesPage() {
                   )
                 })}
               </div>
+              <h3 className="bg-blue-700 text-center text-white rounded-lg shadow-xl px-3 py-2 cursor-pointer" onClick={() => setPeoples(ChatPeoplesData.ChatPeoples)}>See All </h3>
             </div>
 
             <div className="chat__area lg:col-span-3 xl:col-span-3 2xl:col-span-3 bg-white rounded-xl p-5 box-border">
-              <Messages />
+              <Messages users={peoples} />
             </div>
           </div>
           <Footer />
@@ -51,12 +59,6 @@ const Wrapper = styled.section`
 
     .messages__heading {
       color: #1f155e;
-    }
-
-    .chat__all__peoples{
-    /* height: 66vh; */
-    /* overflow-y: auto;
-    overflow-x:scroll; */
     }
     .chat__all__peoples::-webkit-scrollbar{
         width:5px;

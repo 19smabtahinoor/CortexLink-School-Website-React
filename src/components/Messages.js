@@ -1,28 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ChatPeoplesData from '../data/cortexlink.json';
 import styled from "styled-components";
 import { Button } from '@material-ui/core';
 
-function Messages() {
+//get messege from localstorage to save our previous messege
+const getMesseges = () => {
+    let lists = localStorage.getItem('messeges')
+    return lists ? JSON.parse(localStorage.getItem('messeges')) : []
+}
+
+function Messages({users}) {
     const [peoples] = useState(ChatPeoplesData.ChatPeoples)
-    const [chatMessage, setChatMessage] = useState('')
-    const [submitMessage, setSubmitMessage] = useState([])
+    const [chatMessage, setChatMessage] = useState("")
+    const [submitMessage, setSubmitMessage] = useState(getMesseges())
     const handleMessage = (event) => {
         event.preventDefault()
         const updateMessage = [...submitMessage, chatMessage]
         setSubmitMessage(updateMessage)
         setChatMessage('')
     }
+  
+    useEffect(() => {
+        localStorage.setItem('messeges', JSON.stringify(submitMessage))
+    }, [submitMessage])
     return (
         <Wrapper>
             <div className="chat__area__wrapper grid grid-row-4">
 
                 {/* chat area heading  */}
                 <div className="flex items-center border-b border-gray-300 row-span-1">
-                    <img className="chat__person__img w-16 h-16 items-center rounded-full mb-3 object-cover" src={peoples[4].image} alt="Chat Person" />
+                    <img className="chat__person__img w-16 h-16 items-center rounded-full mb-3 object-cover" src={users[0].image} alt="Chat Person" />
 
                     <div className="chat__person__info flex flex-col flex-grow pl-3 ">
-                        <h3 className="text-gray-700 font-semibold text-lg">{peoples[4].name}</h3>
+                        <h3 className="text-gray-700 font-semibold text-lg">{users[0].name}</h3>
                         <span className="text-sm text-gray-500"><i className="fa fa-circle text-green-300 pr-2"></i>Onilne</span>
                     </div>
 
@@ -38,7 +48,7 @@ function Messages() {
                         return (
                             <>
                                 <div className="flex items-center space-x-2 my-2" key={index}>
-                                    <img className="w-10 h-10 items-center rounded-full mb-3 object-cover" src={peoples[0].image} alt="Chat Person" />
+                                    <img className="w-10 h-10 items-center rounded-full mb-3 object-cover" src={peoples[4].image} alt="Chat Person" />
 
                                     <div className="flex items-center bg-yellow-100 p-3 rounded-lg">
                                         <span className="break-all">{item}</span>
