@@ -84,7 +84,7 @@ function HomeworkPage() {
                                         </Select>
                                     </FormControl>
                                 </div>
-                                
+
                             </div>
                             <div className="overflow-auto  mb-8">
                                 <BubbleGraph />
@@ -93,12 +93,12 @@ function HomeworkPage() {
 
                         {/* student id information  */}
                         <div className="flex flex-col  p-6 box-border">
-                            
+
                             <div>
                                 <h1 className="homework__heading font-semibold text-lg pb-3 md:text-lg lg:text-xl xl:text-xl 2xl:text-xl pt-4">Student ID</h1>
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 ">
-                                    {studentIdData.map((element,index) => {
+                                    {studentIdData.map((element, index) => {
                                         return (
                                             <div className="" key={index}>
                                                 <p className="text-gray-500 font-semibold py-4">{element.id}</p>
@@ -113,29 +113,29 @@ function HomeworkPage() {
                                 <h1 className="homework__heading font-semibold text-lg pb-5 md:text-lg lg:text-xl xl:text-xl 2xl:text-xl pt-4">Student ID</h1>
 
                                 <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row space-x-6">
-                                    
+
                                     <Button className="solution__button " >View Solution</Button>
                                     <Button className="solution__button" >View Solution</Button>
-                                    
+
                                 </div>
                             </div>
                         </div>
 
                     </div>
 
-                {/* Pie Chart  */}
+                    {/* Pie Chart  */}
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-15">
-                        <div className="pie__wrapper bg-white rounded-xl shadow-xl p-6 overflow-auto  mr-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-15 bg-white rounded-xl shadow-xl p-6 overflow-hidden md:place-items-center">
+                        <div className="col-span-1">
                             <PieChart />
                         </div>
-                        <div className="pie__wrapper bg-white rounded-xl shadow-xl p-6 overflow-auto mr-6">
+                        <div className="col-span-1">
                             <PieChart />
                         </div>
-                        <div className="pie__wrapper bg-white rounded-xl shadow-xl p-6 overflow-auto mr-6">
+                        <div className="col-span-1">
                             <PieChart />
                         </div>
-                </div>
+                    </div>
                     <Footer />
                 </section>
             </Wrapper>
