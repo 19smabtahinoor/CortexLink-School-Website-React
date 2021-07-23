@@ -23,6 +23,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function HomeworkPage() {
+    //solution popoup
+    const [popup, setPopup] = useState(false)
     const [studentIdData] = useState(StudentId.StudentID)
     // Select Course 
     const classes = useStyles();
@@ -41,10 +43,15 @@ function HomeworkPage() {
         setOpen(true);
     };
 
+    //handle popup
+    const handlePopup = () => {
+        setPopup(true)
+    }
+
     return (
         <>
             <Wrapper>
-                <section className="homework__section px-12 pb-12 -ml-20 md:-ml-24 lg:-ml-32 xl:m-0 2xl:m-0">
+                <section className="homework__section px-12 pb-12 -ml-20 md:-ml-24 lg:-ml-32 xl:m-0 2xl:m-0" >
                     <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row  pt-12 pb-12">
                         <h1 className="homework__heading font-semibold text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl flex flex-grow">Homework</h1>
                     </div>
@@ -114,8 +121,8 @@ function HomeworkPage() {
 
                                 <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row space-x-6">
 
-                                    <Button className="solution__button " >View Solution</Button>
-                                    <Button className="solution__button" >View Solution</Button>
+                                    <button className="solution__button" onClick={handlePopup} >View Solution</button>
+                                    <button className="solution__button" onClick={handlePopup}>View Solution</button>
 
                                 </div>
                             </div>
@@ -136,6 +143,17 @@ function HomeworkPage() {
                             <PieChart />
                         </div>
                     </div>
+
+                    {/* solution popup  */}
+                    {popup && (
+                        <div className="solution__popup bg-gray-300 rounded-xl shadow-2xl p-6 box-border" >
+                            <div className="flex items-center">
+                                <h1 className="text-xl font-semibold flex flex-grow">Here is the solution:</h1>
+                                <span className="text-lg text-white bg-red-600 w-6 h-6 p-2 rounded-full flex justify-center items-center cursor-pointer" onClick={() => setPopup(false)}>X</span>
+                            </div>
+                            <img className="shadow-xl" src="https://www.brainfans.com/brainteasers/brain-teaser-number-maths-puzzles-number-puzzle-with-answers-12816192775910479f52ff41.20425540.png" alt="" />
+                        </div>
+                    )}
                     <Footer />
                 </section>
             </Wrapper>
@@ -146,6 +164,7 @@ function HomeworkPage() {
 const Wrapper = styled.section`
 .homework__section{
     background:#F1F3F9;
+    position: relative;
 
     .homework__heading{
         color:#1F155E;
@@ -167,6 +186,25 @@ const Wrapper = styled.section`
     .pie__wrapper::-webkit-scrollbar-thumb{
         background:#ddd;
         border-radius:50px;
+    }
+    .active{
+        display:block;
+    }
+    .popup__wrapper{
+        display:none;
+    }
+    .solution__popup{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 6;
+        img{
+            width:300px;
+            height:250px;
+            border-radius:10px;
+            object-fit:contain;
+        }
     }
 }
 `
