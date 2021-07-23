@@ -1,0 +1,394 @@
+{
+  "myCourse": [
+    {
+      "id": 1,
+      "image": "../../assets/mycourse1.jpg",
+      "title": "Introduction to Fraction: Concepts,Methods,Formulae",
+      "time": "Duration: 12 months",
+      "studentsNumber": "+30 students",
+      "category": "Fraction",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": 2,
+      "image": "../../assets/mycourse2.jpg",
+      "title": "Introduction to Fraction: Concepts,Methods,Formulae",
+      "time": "Duration: 12 months",
+      "studentsNumber": "+30 students",
+      "category": "Counting",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": 3,
+      "image": "../../assets/mycourse3.jpg",
+      "title": "Introduction to Fraction: Concepts,Methods,Formulae",
+      "time": "Duration: 12 months",
+      "studentsNumber": "+30 students",
+      "category": "Algebra",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": 4,
+      "image": "../../assets/mycourse4.jpg",
+      "title": "Introduction to Fraction: Concepts,Methods,Formulae",
+      "time": "Duration: 12 months",
+      "studentsNumber": "+30 students",
+      "category": "Arithmetic",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": 5,
+      "image": "../../assets/mycourse5.jpg",
+      "title": "Introduction to Fraction: Concepts,Methods,Formulae",
+      "time": "Duration: 12 months",
+      "studentsNumber": "+30 students",
+      "category": "Trigonometic",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": 6,
+      "image": "../../assets/mycourse6.jpg",
+      "title": "Introduction to Fraction: Concepts,Methods,Formulae",
+      "time": "Duration: 12 months",
+      "studentsNumber": "+30 students",
+      "category": "Fraction",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
+  ],
+  "BarGrpahData": [
+    {
+      "id": 1,
+      "barColor": "#C9A8FF",
+      "xaxis": ["Novice", "Intermediate", "Expert"],
+      "yaxis": [12, 18, 27]
+    },
+    {
+      "id": 2,
+      "barColor": "#FF94A4",
+      "xaxis": ["Novice", "Intermediate", "Expert"],
+      "yaxis": [7, 14, 5]
+    },
+    {
+      "id": 3,
+      "barColor": "#C9A8FF",
+      "xaxis": ["Novice", "Intermediate", "Expert"],
+      "yaxis": [2, 10, 23]
+    },
+    {
+      "id": 4,
+      "barColor": "#C9A8FF",
+      "xaxis": ["Novice", "Intermediate", "Expert"],
+      "yaxis": [5, 25, 34]
+    }
+  ],
+  "ChatPeoples": [
+    {
+      "id": 1,
+      "image": "../../assets/chat1.jpg",
+      "name": "Smith Watson",
+      "subject": "(B.com)"
+    },
+    {
+      "id": 2,
+      "image": "../../assets/chat2.jpg",
+      "name": "Morese Sharpe",
+      "subject": "(Biology)"
+    },
+    {
+      "id": 3,
+      "image": "../../assets/chat3.jpg",
+      "name": "Tom Williams",
+      "subject": "(English)"
+    },
+    {
+      "id": 4,
+      "image": "../../assets/chat4.jpg",
+      "name": "Losis Bla",
+      "subject": "(B.com)"
+    },
+    {
+      "id": 5,
+      "image": "../../assets/chat5.jpg",
+      "name": "Saila Waris",
+      "subject": "(Emglish)"
+    },
+    {
+      "id": 6,
+      "image": "../../assets/chat6.jpg",
+      "name": "Smith Watson",
+      "subject": "(Biology)"
+    }
+  ],
+  "HomepageCardInfo": [
+    {
+      "id": 1,
+      "title": "Total Students",
+      "numbers": 3280,
+      "progress": "36",
+      "progressBarColor": "green-500",
+      "description": "80% Increase in 20 days"
+    },
+    {
+      "id": 2,
+      "title": "New Students",
+      "numbers": 245,
+      "progress": "48",
+      "progressBarColor": "yellow-500",
+      "description": "50% Increase in 25 days"
+    },
+    {
+      "id": 3,
+      "title": "Total Course",
+      "numbers": 24,
+      "progress": "64",
+      "progressBarColor": "red-500",
+      "description": "70% Increase in 25 days"
+    }
+  ],
+  "TeachersList": [
+    {
+      "id": 1,
+      "image": "../../assets/chat1.jpg",
+      "name": "Smith Watson",
+      "subject": "(B.com)"
+    },
+    {
+      "id": 2,
+      "image": "../../assets/chat2.jpg",
+      "name": "Morese Sharpe",
+      "subject": "(Biology)"
+    },
+    {
+      "id": 3,
+      "image": "../../assets/chat3.jpg",
+      "name": "Tom Williams",
+      "subject": "(English)"
+    },
+    {
+      "id": 4,
+      "image": "../../assets/chat4.jpg",
+      "name": "Losis Bla",
+      "subject": "(B.com)"
+    }
+  ],
+  "TopStudentList": [
+    {
+      "id": 1,
+      "image": "../../assets/chat8.jpg",
+      "name": "Angelica Ramos",
+      "subject": "(Class10th)"
+    },
+    {
+      "id": 2,
+      "image": "../../assets/chat5.jpg",
+      "name": "Bradley Greer",
+      "subject": "(Class10th)"
+    },
+    {
+      "id": 3,
+      "image": "../../assets/chat7.jpg",
+      "name": "Cedric Kelly",
+      "subject": "(Class10th)"
+    },
+    {
+      "id": 4,
+      "image": "../../assets/chat6.jpg",
+      "name": "Rhana Davidson",
+      "subject": "(Class10th)"
+    }
+  ],
+  "NewStudentList": [
+    {
+      "id": 1,
+      "name": "Cedric Kelly",
+      "admissionDate": "1 June 2021",
+      "status": "Checkin",
+      "statusColor": "green-500"
+    },
+    {
+      "id": 2,
+      "name": "Bradley Greer",
+      "admissionDate": "1 June 2021",
+      "status": "Pending",
+      "statusColor": "yellow-500"
+    },
+    {
+      "id": 3,
+      "name": "Rihana",
+      "admissionDate": "1 June 2021",
+      "status": "Cancelled",
+      "statusColor": "red-500"
+    }
+  ],
+  "AllTeachers": [
+    {
+      "id": 1,
+      "image": "../../assets/chat3.jpg",
+      "name": "Maria Hostaria",
+      "phoneNo": "+12 867 3765",
+      "address": "Jakarta,Indonesia",
+      "email": "justinhope@gmail.com",
+      "about": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown  ...",
+      "expertise": "World History, Philosophy, Prehistoric, Culture, Ancient",
+      "education": [
+        "History major, University Akademi Historia",
+        "Master of History, University Akademi Historia"
+      ]
+    }
+  ],
+  "Notifications": [
+    {
+      "id": 1,
+      "image": "../../assets/chat1.jpg",
+      "title": "Homework pending for history subject",
+      "time": "3 hours ago"
+    },
+    {
+      "id": 2,
+      "image": "../../assets/chat2.jpg",
+      "title": "Homework pending for history subject",
+      "time": "3 hours ago"
+    },
+    {
+      "id": 3,
+      "image": "../../assets/chat3.jpg",
+      "title": "Homework pending for history subject",
+      "time": "3 hours ago"
+    },
+    {
+      "id": 4,
+      "image": "../../assets/chat4.jpg",
+      "title": "Homework pending for history subject",
+      "time": "3 hours ago"
+    }
+  ],
+  "AllNotifications": [
+    {
+      "id": 1,
+      "time": "Monday 19 June,2021",
+      "notificationText": "has created new task at",
+      "name": "Angelica Ramos",
+      "subject": "History Lesson"
+    },
+    {
+      "id": 2,
+      "time": "Monday 19 June,2021",
+      "notificationText": "Due date of task will be coming",
+      "name": "[Reminder]",
+      "subject": "Science Homework"
+    },
+    {
+      "id": 3,
+      "time": "Monday 19 June,2021",
+      "notificationText": "commented",
+      "name": "Tony Soap",
+      "subject": "Science Homework"
+    }
+  ],
+  "currentCoursesList": [
+    {
+      "id": 1,
+      "subject": "Mathematics",
+      "subjectsColor": "red-400",
+      "title": "Quisque a fells quis Course A-Z",
+      "time": "45 days left"
+    },
+    {
+      "id": 2,
+      "subject": "History",
+      "subjectsColor": "indigo-600",
+      "title": "Quisque a fells quis Course A-Z",
+      "time": "10 days left"
+    },
+    {
+      "id": 3,
+      "subject": "Science",
+      "subjectsColor": "indigo-900",
+      "title": "Quisque a fells quis Course A-Z",
+      "time": "15 days left"
+    },
+    {
+      "id": 4,
+      "subject": "Computer",
+      "subjectsColor": "blue-300",
+      "title": "Quisque a fells quis Course A-Z",
+      "time": "1 days left"
+    }
+  ],
+  "UpcomingLessons": [
+    {
+      "id": 1,
+      "title": "Programming",
+      "time": "Everyday 10am - 11am",
+      "students": ["../../assets/chat1.jpg", "../../assets/chat2.jpg"],
+      "cardColor": "red-400"
+    },
+    {
+      "id": 2,
+      "title": "Core Language",
+      "time": "Everyday 12pm - 01pm",
+      "students": ["../../assets/chat5.jpg", "../../assets/chat6.jpg"],
+      "cardColor": "indigo-500"
+    }
+  ],
+  "UpcommingCourses": [
+    {
+      "id": 1,
+      "title": "Informatic Course",
+      "description": "John Doe, 19 June",
+      "image": "../../assets/chat7.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Live Drawing",
+      "description": "Mickey Jey, 25 June",
+      "image": "../../assets/chat8.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Contempary Art",
+      "description": "Potar parker, 26 June",
+      "image": "../../assets/chat5.jpg"
+    }
+  ],
+  "PerformenceGraphData": [
+    {
+      "id": 1,
+      "barColor": "#C9A8FF",
+      "xaxis": ["Novice", "Intermediate", "Expert"],
+      "yaxis": [12, 18, 27]
+    }
+  ],
+  "StudentsProfile": [
+    {
+      "id": 1,
+      "image": "../../assets/chat8.jpg",
+      "name": "Kare Hope",
+      "phoneNo": "+12 867 3765",
+      "address": "Jakarta,Indonesia",
+      "email": "justinhope@gmail.com"
+    }
+  ],
+  "StudentID":[
+    { "id": "#577138" },
+    { "id": "#449258" },
+    { "id": "#317325" },
+    { "id": "#694159" },
+    { "id": "#199093" },
+    { "id": "#490062" },
+    { "id": "#736887" },
+    { "id": "#933927" },
+    { "id": "#648898" },
+    { "id": "#730091" },
+    { "id": "#529453" },
+    { "id": "#346795" },
+    { "id": "#878471" },
+    { "id": "#759565" },
+    { "id": "#345296" },
+    { "id": "#785415" },
+    { "id": "#167334" },
+    { "id": "#203535" },
+    { "id": "#663049" },
+    { "id": "#277845" }
+  ]
+}

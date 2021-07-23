@@ -1,0 +1,14 @@
+body {
+  background: #f1f3f9;
+}
+body::-webkit-scrollbar{
+        width:5px;
+}
+body::-webkit-scrollbar-thumb{
+        background:#ddd;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+}
