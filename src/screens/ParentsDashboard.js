@@ -13,6 +13,8 @@ import BarGraph from '../components/BarGraph';
 import GraphD from "../data/cortexlink.json";
 import Calendar from 'react-calendar'
 import ParentDashboardGraph from '../components/ParentDashboardGraph'
+import { NavLink } from 'react-router-dom'
+
 // Make Select Option 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -159,6 +161,10 @@ function ParentsDashboard() {
                                     )
                                 })}
                             </div>
+                            <div className="mt-5 flex justify-center">
+                                <NavLink className="w-full rounded-lg py-3 px-4 text-white bg-blue-800 flex justify-center" to="/mycourses">View all courses</NavLink>
+                            </div>
+                            
 
                         </div>
 

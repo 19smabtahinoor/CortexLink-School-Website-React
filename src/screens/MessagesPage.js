@@ -22,7 +22,7 @@ function MessagesPage() {
                 {peoples.map((people, index) => {
                   return (
                     <>
-                      <div className="chat__people flex flex-row space-x-3" key={index}>
+                      <div className="chat__people flex flex-row space-x-3" key={people.id} onClick={() => alert("kabid")}>
                         <img className="w-16 h-16 rounded-full mb-3 object-cover mr-2" src={people.image} alt="" />
                         <div className="flex-col hidden xl:flex 2xl:flex">
                           <h1 className="text-gray-700 font-semibold">{people.name}</h1>

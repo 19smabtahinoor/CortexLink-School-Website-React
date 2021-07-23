@@ -10,7 +10,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import StudentId from '../data/cortexlink.json';
-import { Button } from '@material-ui/core';
 
 // Make Select Option 
 const useStyles = makeStyles((theme) => ({
