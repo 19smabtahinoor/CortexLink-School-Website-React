@@ -212,25 +212,37 @@
       "id": 1,
       "image": "../../assets/chat8.jpg",
       "name": "Angelica Ramos",
-      "subject": "(Class10th)"
+      "subject": "(Class10th)",
+      "phoneNo": "+12 867 3765",
+      "address": "Jakarta,Indonesia",
+      "email": "justinhope@gmail.com"
     },
     {
       "id": 2,
       "image": "../../assets/chat5.jpg",
       "name": "Bradley Greer",
-      "subject": "(Class10th)"
+      "subject": "(Class10th)",
+      "phoneNo": "+12 867 3765",
+      "address": "Jakarta,Indonesia",
+      "email": "justinhope@gmail.com"
     },
     {
       "id": 3,
       "image": "../../assets/chat7.jpg",
       "name": "Cedric Kelly",
-      "subject": "(Class10th)"
+      "subject": "(Class10th)",
+      "phoneNo": "+12 867 3765",
+      "address": "Jakarta,Indonesia",
+      "email": "justinhope@gmail.com"
     },
     {
       "id": 4,
       "image": "../../assets/chat6.jpg",
       "name": "Rhana Davidson",
-      "subject": "(Class10th)"
+      "subject": "(Class10th)",
+      "phoneNo": "+12 867 3765",
+      "address": "Jakarta,Indonesia",
+      "email": "justinhope@gmail.com"
     }
   ],
   "NewStudentList": [

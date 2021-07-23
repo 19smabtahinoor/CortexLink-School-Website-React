@@ -94,6 +94,7 @@ function Home() {
                             {StudentsListData.map(({ id, image, name, subject }) => {
                                 return (
                                     <>
+                                        <NavLink to={`/students/student-profile/${id}`}>
                                         <div className="grid grid-cols-3" key={id}>
                                             <div className="col-span-1">
                                                 <div className=" flex flex-row space-x-3" key={id}>
@@ -118,6 +119,7 @@ function Home() {
 
                                             </div>
                                         </div>
+                                        </NavLink>
 
 
 

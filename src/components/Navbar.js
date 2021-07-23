@@ -13,7 +13,6 @@ function Navbar() {
         <Wrapper>
             <header className="header py-3">
                 <div className="flex flex-row-reverse items-center">
-                    <NavLink to="/student-profile">
                         <div className=" flex flex-row items-center pr-4 space-x-4 mr-6">
                             <i className="header__icons bg-white p-3 rounded-full fas fa-user cursor-pointer"></i>
                             <div className="">
@@ -22,7 +21,6 @@ function Navbar() {
                             </div>
                             <i className="header__icons fas fa-angle-down cursor-pointer"></i>
                         </div>
-                    </NavLink>
                     <div className="flex items-center" onClick={() => setNotificationChange(!notificationChange)}>
                         <span className="w-3 h-3 bg-red-600 p-1 rounded-full relative -right-8 -top-2 text-sm"></span>
                         <i className="bg-white p-3 mr-5 rounded-full header__icons fas fa-bell cursor-pointer"></i>

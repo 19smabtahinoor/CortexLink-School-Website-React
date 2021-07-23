@@ -20,6 +20,7 @@ import HomeworkPage from './screens/HomeworkPage';
 import CourseStudentsPage from './screens/CourseStudentsPage';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
+import ErrorPage from './components/ErrorPage';
 
 function App() {
 
@@ -84,6 +85,8 @@ function App() {
                             </Route>
                             <Route exact path="/coursedetails/:id" children={<CourseDetails />}></Route>
                             <Route exact path="/teachers/teacher-profile/:id" children={<TeachersProfile />}></Route>
+                            <Route exact path="/students/student-profile/:id" children={<StudentProfile />}></Route>
+                            <Route exact path="*">{<ErrorPage/>}</Route>
                         </Switch>
                     </div>
                 </div>
