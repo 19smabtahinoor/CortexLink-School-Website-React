@@ -5,6 +5,7 @@ import topCardsData from '../data/cortexlink.json';
 import teacherlist from '../data/cortexlink.json';
 import topstudentlist from '../data/cortexlink.json';
 import newstudentlist from '../data/cortexlink.json';
+import { NavLink } from 'react-router-dom';
 import createPlotlyComponent from 'react-plotlyjs';
 import Plotly from 'plotly.js/dist/plotly-cartesian';
 const PlotlyComponent = createPlotlyComponent(Plotly);
@@ -46,18 +47,18 @@ function Home() {
                     {/* home__page__top__cards__wrapper */}
                     <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-10">
 
-                        {Data1.map(({ id,title, numbers, progress, progressBarColor, description}) => {
-                            return(
+                        {Data1.map(({ id, title, numbers, progress, progressBarColor, description }) => {
+                            return (
                                 <>
                                     <div className="rounded-xl bg-white shadow-xl p-8" key={id}>
-                                    <h3 className="font-semibold text-gray-600 text-lg pb-1">{title}</h3>
-                                    <h1 className="text-3xl text-gray-800 font-bold pb-1">{numbers}</h1>
+                                        <h3 className="font-semibold text-gray-600 text-lg pb-1">{title}</h3>
+                                        <h1 className="text-3xl text-gray-800 font-bold pb-1">{numbers}</h1>
                                         <div className="h-3 relative max-w-xl rounded-full overflow-hidden mb-1">
                                             <div className="w-full h-full bg-gray-200 absolute"></div>
                                             <div id="bar" className={`h-full bg-${progressBarColor} relative w-${progress}`}></div>
                                         </div>
                                         <span className="text-gray-400 text-sm">{description}</span>
-                                </div>
+                                    </div>
                                 </>
                             )
                         })}
@@ -69,58 +70,60 @@ function Home() {
                         {/* teachers list */}
                         <div className="col-span-1 rounded-xl bg-white shadow-xl p-8 ">
                             <h3 className="font-semibold text-gray-600 text-lg pb-3">Teachers List</h3>
-                            {TeachersListData.map(({ id, image, name, subject}) => {
-                            return(
-                                <>
-                                    <div className=" flex flex-row space-x-3" key={id}>
-                                        <img className="w-16 h-16 rounded-full mb-3 object-cover mr-2" src={image} alt="" />
-                                        <div className="flex flex-col">
-                                            <h1 className="text-gray-700 font-semibold">{name}</h1>
-                                            <span className="text-sm text-gray-500">{subject}</span>
-                                        </div>
-                                    </div>
-                                </>
-                            )
+                            {TeachersListData.map(({ id, image, name, subject }) => {
+                                return (
+                                    <>
+                                        <NavLink to={`/teachers/teacher-profile/${id}`}>
+                                            <div className=" flex flex-row space-x-3" key={id}>
+                                                <img className="w-16 h-16 rounded-full mb-3 object-cover mr-2" src={image} alt="" />
+                                                <div className="flex flex-col">
+                                                    <h1 className="text-gray-700 font-semibold">{name}</h1>
+                                                    <span className="text-sm text-gray-500">{subject}</span>
+                                                </div>
+                                            </div>
+                                        </NavLink>
+                                    </>
+                                )
                             })}
                         </div>
 
                         {/* top student list  */}
                         <div className="col-span-2 rounded-xl bg-white shadow-xl p-8">
                             <h3 className="font-semibold text-gray-600 text-lg pb-3">Top Student List</h3>
-                            
-                                    {StudentsListData.map(({ id, image, name, subject }) => {
-                                        return (
-                                            <>
-                                            <div className="grid grid-cols-3" key={id}>
-                                                <div className="col-span-1">
-                                                        <div className=" flex flex-row space-x-3" key={id}>
-                                                            <img className="w-16 h-16 rounded-full mb-3 object-cover mr-2" src={image} alt="" />
-                                                            <div className="flex-col  xl:flex 2xl:flex">
-                                                                <h1 className="text-gray-700 font-semibold">{name}</h1>
-                                                                <span className="text-sm text-gray-500">{subject}</span>
-                                                            </div>
-                                                        </div>
+
+                            {StudentsListData.map(({ id, image, name, subject }) => {
+                                return (
+                                    <>
+                                        <div className="grid grid-cols-3" key={id}>
+                                            <div className="col-span-1">
+                                                <div className=" flex flex-row space-x-3" key={id}>
+                                                    <img className="w-16 h-16 rounded-full mb-3 object-cover mr-2" src={image} alt="" />
+                                                    <div className="flex-col  xl:flex 2xl:flex">
+                                                        <h1 className="text-gray-700 font-semibold">{name}</h1>
+                                                        <span className="text-sm text-gray-500">{subject}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className="col-span-1 ">
+                                                <PlotlyComponent className="hidden md:block lg:block xl:block 2xl:block" data={data} layout={layout} />
+                                            </div>
+
+                                            <div className="col-span-1">
+
+                                                <div className="flex space-x-3 justify-center">
+                                                    <i className="fas fa-pen bg-black text-white p-2 rounded-full w-6 h-6 flex justify-center items-center text-sm"></i>
+                                                    <i className="fas fa-times bg-red-500 text-white p-2 rounded-full w-6 h-6 flex justify-center items-center text-sm"></i>
                                                 </div>
 
-                                                    <div className="col-span-1 ">
-                                                        <PlotlyComponent className="hidden md:block lg:block xl:block 2xl:block" data={data} layout={layout}/>
-                                                    </div>
-
-                                                    <div className="col-span-1">
-
-                                                        <div className="flex space-x-3 justify-center">
-                                                            <i className="fas fa-pen bg-black text-white p-2 rounded-full w-6 h-6 flex justify-center items-center text-sm"></i>
-                                                            <i className="fas fa-times bg-red-500 text-white p-2 rounded-full w-6 h-6 flex justify-center items-center text-sm"></i>
-                                                        </div>
-
-                                                    </div>
                                             </div>
-                                                
+                                        </div>
 
-                                               
-                                            </>
-                                        )
-                                    })}
+
+
+                                    </>
+                                )
+                            })}
                         </div>
                     </div>
 
@@ -139,8 +142,8 @@ function Home() {
                             </div>
 
                             <div className="">
-                                {NewStudentsListData.map(({ id, name, admissionDate, status, statusColor}) => {
-                                    return(
+                                {NewStudentsListData.map(({ id, name, admissionDate, status, statusColor }) => {
+                                    return (
                                         <>
                                             <div className="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-5 py-2" key={id}>
                                                 <span className="text-gray-700 font-bold text-lg hidden lg:block xl:block 2xl:block">{id}.</span>

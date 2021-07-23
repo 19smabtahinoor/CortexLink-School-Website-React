@@ -48,7 +48,7 @@ function CourseDetails() {
                                 <Button className="course__reports__button py-4">Check Report</Button>
                             </NavLink>
 
-                            <div className=" flex flex-row items-center mt-4" style={{ marginTop: "10%" }}>
+                            <NavLink to="/enrolled-students" className=" flex flex-row items-center mt-4" style={{ marginTop: "10%" }}>
                                 <div className="flex flex-grow">
                                     <img className="w-8 h-8 rounded-full" src="../../assets/student1.jpg" alt="" />
                                     <img className="w-8 h-8 rounded-full" src="../../assets/student2.jpg" alt="" />
@@ -57,7 +57,7 @@ function CourseDetails() {
                                 </div>
 
                                 <h3 className="my__courses__students__number text-lg pr-8 hidden md:block lg:block xl:block 2xl:block">{studentsNumber}</h3>
-                            </div>
+                            </NavLink>
 
                             <Button className="course__assignments__button" startIcon={<FaBook className="text-white" />}>Assignements</Button>
                         </div>

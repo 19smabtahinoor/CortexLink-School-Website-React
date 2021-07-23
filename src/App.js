@@ -17,6 +17,7 @@ import AddNewStudent from './screens/AddNewStudent';
 import ParentsDashboard from './screens/ParentsDashboard';
 import StudentProfile from './screens/StudentProfile';
 import HomeworkPage from './screens/HomeworkPage'; 
+import CourseStudentsPage from './screens/CourseStudentsPage';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 
@@ -48,8 +49,8 @@ function App() {
                             <Route exact path="/add-new-course">
                                 {<AddNewCourse />}
                             </Route>
-                            <Route exact path="/teacher-profile">
-                                {<TeachersProfile />}
+                            <Route exact path="/teachers">
+                                {<><h1>Teachers List</h1></>}
                             </Route>
                             <Route exact path="/notifications">
                                 {<NotificationDetails />}
@@ -78,7 +79,11 @@ function App() {
                             <Route exact path="/homework">
                                 {<HomeworkPage />}
                             </Route>
+                            <Route exact path="/enrolled-students">
+                                {<CourseStudentsPage />}
+                            </Route>
                             <Route exact path="/coursedetails/:id" children={<CourseDetails />}></Route>
+                            <Route exact path="/teachers/teacher-profile/:id" children={<TeachersProfile />}></Route>
                         </Switch>
                     </div>
                 </div>

@@ -102,13 +102,13 @@ const rows = [
 ];
 
 
-function StudentsPage() {
+function CourseStudentsPage() {
     return (
         <>
             <Wrapper>
                 <section className="students__section px-12 pb-12 -ml-20 md:-ml-24 lg:-ml-32 xl:m-0 2xl:m-0">
                     <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row  pt-12 pb-12">
-                        <h1 className="students__heading font-semibold text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl flex flex-grow pb-4">Students</h1>
+                        <h1 className="students__heading font-semibold text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl flex flex-grow pb-4">Students in this course</h1>
                         <NavLink to="/add-new-student">
                             <Button className="new__students__button" startIcon={<AddIcon />}>New Student</Button>
                         </NavLink>
@@ -116,7 +116,7 @@ function StudentsPage() {
 
                     <div className="grid grid-cols-1 bg-white rounded-xl shadow-xl p-8 box-border">
                         <div className="data__table__students" style={{ height: 500, width: '100%' }}>
-                            <DataGrid rows={rows} columns={columns} pageSize={6} checkboxSelection disableSelectionOnClick  />
+                            <DataGrid rows={rows} columns={columns} pageSize={6} checkboxSelection />
                         </div>
                     </div>
 
@@ -151,4 +151,4 @@ const Wrapper = styled.section`
 
 `
 
-export default StudentsPage;
+export default CourseStudentsPage;

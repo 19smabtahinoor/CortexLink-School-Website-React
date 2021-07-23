@@ -22,7 +22,7 @@ function Sidebar() {
                                 <i className="text-white text-xl fas fa-home home__icon"></i>
                         </NavLink>
 
-                        <NavLink to="/teacher-profile" activeClassName="menu_active_mobile" className="menu_mobile flex flex-row items-center space-x-3  px-3 py-3 my-2">
+                        <NavLink to="//teachers" activeClassName="menu_active_mobile" className="menu_mobile flex flex-row items-center space-x-3  px-3 py-3 my-2">
                                 <i className="text-white text-xl fas fa-chalkboard-teacher home__icon"></i>
                         </NavLink>
 
@@ -65,7 +65,7 @@ function Sidebar() {
 
                             </NavLink>
 
-                            <NavLink to="/teacher-profile" activeClassName="menu_active" className="menu flex flex-row items-center space-x-3  pl-4 py-3 my-2">
+                                <NavLink to="/teachers" activeClassName="menu_active" className="menu flex flex-row items-center space-x-3  pl-4 py-3 my-2">
                                 <i className="fas fa-chalkboard-teacher home__icon"></i>
                                 <span className="text-white home__menu__text">Teachers</span>
                             </NavLink>

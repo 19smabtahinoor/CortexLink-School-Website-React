@@ -150,25 +150,61 @@
       "id": 1,
       "image": "../../assets/chat1.jpg",
       "name": "Smith Watson",
-      "subject": "(B.com)"
+      "subject": "(B.com)",
+      "phoneNo": "+12 867 3765",
+      "address": "Jakarta,Indonesia",
+      "email": "justinhope@gmail.com",
+      "about": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown  ...",
+      "expertise": "World History, Philosophy, Prehistoric, Culture, Ancient",
+      "education": [
+        "History major, University Akademi Historia",
+        "Master of History, University Akademi Historia"
+      ]
     },
     {
       "id": 2,
       "image": "../../assets/chat2.jpg",
       "name": "Morese Sharpe",
-      "subject": "(Biology)"
+      "subject": "(Biology)",
+      "phoneNo": "+12 867 3765",
+      "address": "Jakarta,Indonesia",
+      "email": "justinhope@gmail.com",
+      "about": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown  ...",
+      "expertise": "World History, Philosophy, Prehistoric, Culture, Ancient",
+      "education": [
+        "History major, University Akademi Historia",
+        "Master of History, University Akademi Historia"
+      ]
     },
     {
       "id": 3,
       "image": "../../assets/chat3.jpg",
       "name": "Tom Williams",
-      "subject": "(English)"
+      "subject": "(English)",
+      "phoneNo": "+12 867 3765",
+      "address": "Jakarta,Indonesia",
+      "email": "justinhope@gmail.com",
+      "about": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown  ...",
+      "expertise": "World History, Philosophy, Prehistoric, Culture, Ancient",
+      "education": [
+        "History major, University Akademi Historia",
+        "Master of History, University Akademi Historia"
+      ]
     },
     {
       "id": 4,
       "image": "../../assets/chat4.jpg",
       "name": "Losis Bla",
-      "subject": "(B.com)"
+      "subject": "(B.com)",
+      "phoneNo": "+12 867 3765",
+      "address": "Jakarta,Indonesia",
+      "email": "justinhope@gmail.com",
+      "about": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown  ...",
+      "expertise": "World History, Philosophy, Prehistoric, Culture, Ancient",
+      "education": [
+        "History major, University Akademi Historia",
+        "Master of History, University Akademi Historia"
+      ]
     }
   ],
   "TopStudentList": [
