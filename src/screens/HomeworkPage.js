@@ -131,7 +131,7 @@ function HomeworkPage() {
 
                     {/* Pie Chart  */}
 
-                    <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-15 bg-white rounded-xl shadow-xl p-6 overflow-hidden md:place-items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 bg-white rounded-xl shadow-xl overflow-hidden md:place-items-center">
                         <div className="col-span-1">
                             <PieChart />
                         </div>

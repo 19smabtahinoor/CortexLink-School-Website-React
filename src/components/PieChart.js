@@ -11,9 +11,9 @@ function PieChart() {
     let layout = {
         width: 370,
         height: 370,
-        title: "<b>m1 number of Rights vs Wrong</b>",
+        title: "<b>Chart of Rights vs Wrong</b>",
         margin: {
-            l: 80,
+            
             r: 100
         },
         paper_bgcolor: "white",
