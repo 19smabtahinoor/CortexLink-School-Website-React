@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Button } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
@@ -30,10 +30,10 @@ const columns = [
         renderCell: (params) => {
             return (
                 <NavLink to={`/students/student-profile/${params.row.id}`}>
-                <div className="flex items-center space-x-3">
-                    <img className="rounded-full w-9 h-9 object-cover" src={params.row.img} alt={params.row.name} />
-                    <p className="font-bold text-gray-700 pr-4">{params.row.name}</p>
-                </div>
+                    <div className="flex items-center space-x-3">
+                        <img className="rounded-full w-9 h-9 object-cover" src={params.row.img} alt={params.row.name} />
+                        <p className="font-bold text-gray-700 pr-4">{params.row.name}</p>
+                    </div>
                 </NavLink>
             );
         }
