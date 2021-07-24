@@ -10,9 +10,6 @@ import createPlotlyComponent from 'react-plotlyjs';
 import Plotly from 'plotly.js/dist/plotly-cartesian';
 const PlotlyComponent = createPlotlyComponent(Plotly);
 
-// import { Button } from '@material-ui/core';
-// import { NavLink } from 'react-router-dom';
-
 function Home() {
     const [Data1] = useState(topCardsData.HomepageCardInfo)
     const [TeachersListData] = useState(teacherlist.TeachersList)
@@ -21,8 +18,6 @@ function Home() {
 
     let trace1 = {
         y: [1, 10, 3, 7, 5],
-        // y: [1, 3, 2, 3, 1],
-        // mode: 'lines+markers',
         name: 'linear',
         line: { shape: 'linear' },
         type: 'scatter'

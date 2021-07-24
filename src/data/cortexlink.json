@@ -159,7 +159,10 @@
       "education": [
         "History major, University Akademi Historia",
         "Master of History, University Akademi Historia"
-      ]
+      ],
+      "parentname": "Ken Keilly",
+      "city": "Jakarta",
+      "grade": "Teacher"
     },
     {
       "id": 2,
@@ -174,7 +177,10 @@
       "education": [
         "History major, University Akademi Historia",
         "Master of History, University Akademi Historia"
-      ]
+      ],
+      "parentname": "Ken Keilly",
+      "city": "Jakarta",
+      "grade": "Teacher"
     },
     {
       "id": 3,
@@ -189,7 +195,10 @@
       "education": [
         "History major, University Akademi Historia",
         "Master of History, University Akademi Historia"
-      ]
+      ],
+      "parentname": "Ken Keilly",
+      "city": "Jakarta",
+      "grade": "Teacher"
     },
     {
       "id": 4,
@@ -204,7 +213,10 @@
       "education": [
         "History major, University Akademi Historia",
         "Master of History, University Akademi Historia"
-      ]
+      ],
+      "parentname": "Ken Keilly",
+      "city": "Jakarta",
+      "grade": "Teacher"
     }
   ],
   "TopStudentList": [
@@ -215,7 +227,10 @@
       "subject": "(Class10th)",
       "phoneNo": "+12 867 3765",
       "address": "Jakarta,Indonesia",
-      "email": "justinhope@gmail.com"
+      "email": "justinhope@gmail.com",
+      "parentname":"Ken Keilly",
+      "city":"Jakarta",
+      "grade":"10th"
     },
     {
       "id": 2,
@@ -224,7 +239,10 @@
       "subject": "(Class10th)",
       "phoneNo": "+12 867 3765",
       "address": "Jakarta,Indonesia",
-      "email": "justinhope@gmail.com"
+      "email": "justinhope@gmail.com",
+      "parentname": "Ken Keilly",
+      "city": "Jakarta",
+      "grade":"10th"
     },
     {
       "id": 3,
@@ -233,7 +251,10 @@
       "subject": "(Class10th)",
       "phoneNo": "+12 867 3765",
       "address": "Jakarta,Indonesia",
-      "email": "justinhope@gmail.com"
+      "email": "justinhope@gmail.com",
+      "parentname": "Ken Keilly",
+      "city": "Jakarta",
+      "grade":"10th"
     },
     {
       "id": 4,
@@ -242,7 +263,10 @@
       "subject": "(Class10th)",
       "phoneNo": "+12 867 3765",
       "address": "Jakarta,Indonesia",
-      "email": "justinhope@gmail.com"
+      "email": "justinhope@gmail.com",
+      "parentname": "Ken Keilly",
+      "city": "Jakarta",
+      "grade":"10th"
     }
   ],
   "NewStudentList": [
@@ -407,17 +431,7 @@
       "yaxis": [12, 18, 27]
     }
   ],
-  "StudentsProfile": [
-    {
-      "id": 1,
-      "image": "../../assets/chat8.jpg",
-      "name": "Kare Hope",
-      "phoneNo": "+12 867 3765",
-      "address": "Jakarta,Indonesia",
-      "email": "justinhope@gmail.com"
-    }
-  ],
-  "StudentID":[
+  "StudentID": [
     { "id": "#577138" },
     { "id": "#449258" },
     { "id": "#317325" },
@@ -438,5 +452,15 @@
     { "id": "#203535" },
     { "id": "#663049" },
     { "id": "#277845" }
+  ],
+  "StudentsProfile": [
+    {
+      "id": 1,
+      "image": "../../assets/chat8.jpg",
+      "name": "Kare Hope",
+      "phoneNo": "+12 867 3765",
+      "address": "Jakarta,Indonesia",
+      "email": "justinhope@gmail.com"
+    }
   ]
 }

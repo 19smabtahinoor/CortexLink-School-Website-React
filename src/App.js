@@ -18,6 +18,7 @@ import ParentsDashboard from './screens/ParentsDashboard';
 import StudentProfile from './screens/StudentProfile';
 import HomeworkPage from './screens/HomeworkPage'; 
 import CourseStudentsPage from './screens/CourseStudentsPage';
+import TeachersPage from './screens/TeachersPage';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import ErrorPage from './components/ErrorPage';
@@ -51,7 +52,7 @@ function App() {
                                 {<AddNewCourse />}
                             </Route>
                             <Route exact path="/teachers">
-                                {<><h1>Teachers List</h1></>}
+                                {<TeachersPage/>}
                             </Route>
                             <Route exact path="/notifications">
                                 {<NotificationDetails />}

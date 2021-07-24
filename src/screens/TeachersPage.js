@@ -8,7 +8,7 @@ import { DataGrid } from '@material-ui/data-grid';
 import PhoneOutlinedIcon from '@material-ui/icons/PhoneOutlined';
 import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
 import { FormControlLabel, IconButton } from '@material-ui/core';
-import AllStudents from '../data/cortexlink.json';
+import teacherlist from '../data/cortexlink.json';
 
 
 const ContactIcons = ({ index }) => {
@@ -29,11 +29,11 @@ const columns = [
         width: 180,
         renderCell: (params) => {
             return (
-                <NavLink to={`/students/student-profile/${params.row.id}`}>
-                <div className="flex items-center space-x-3">
-                    <img className="rounded-full w-9 h-9 object-cover" src={params.row.img} alt={params.row.name} />
-                    <p className="font-bold text-gray-700 pr-4">{params.row.name}</p>
-                </div>
+                <NavLink to={`/teachers/teacher-profile/${params.row.id}`}>
+                    <div className="flex items-center space-x-3">
+                        <img className="rounded-full w-9 h-9 object-cover" src={params.row.img} alt={params.row.name} />
+                        <p className="font-bold text-gray-700 pr-4">{params.row.name}</p>
+                    </div>
                 </NavLink>
             );
         }
@@ -93,23 +93,23 @@ const columns = [
     }
 ];
 
-function StudentsPage() {
-    const [studentsdata] = useState(AllStudents.TopStudentList)
+function TeachersPage() {
+    const [TeachersListData] = useState(teacherlist.TeachersList)
     return (
         <>
             <Wrapper>
                 <section className="students__section px-12 pb-12 -ml-20 md:-ml-24 lg:-ml-32 xl:m-0 2xl:m-0">
                     <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row  pt-12 pb-12">
-                        <h1 className="students__heading font-semibold text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl flex flex-grow pb-4">Students</h1>
+                        <h1 className="students__heading font-semibold text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl flex flex-grow pb-4">Teachers</h1>
                         <NavLink to="/add-new-student">
-                            <Button className="new__students__button" startIcon={<AddIcon />}>New Student</Button>
+                            <Button className="new__students__button" startIcon={<AddIcon />}>New Teacher</Button>
                         </NavLink>
                     </div>
 
                     <div className="grid grid-cols-1 bg-white rounded-xl shadow-xl p-8 box-border">
                         <div className="data__table__students" style={{ height: 500, width: '100%' }}>
                             <DataGrid rows={
-                                studentsdata.map(({ id, name, image, parentname, grade, city }, index) => {
+                                TeachersListData.map(({ id, name, image, parentname, grade, city }, index) => {
                                     return {
                                         id: id,
                                         name: name,
@@ -154,4 +154,4 @@ const Wrapper = styled.section`
 
 `
 
-export default StudentsPage;
+export default TeachersPage;

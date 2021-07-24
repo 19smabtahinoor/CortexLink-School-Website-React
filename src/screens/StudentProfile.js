@@ -9,7 +9,6 @@ import { Button } from '@material-ui/core';
 import { useParams } from "react-router-dom"
 
 function StudentProfile() {
-    // const [StudentsProfileData] = useState(StudentsProfile.StudentsProfile)
     const [image, setImage] = useState("");
     const [name, setName] = useState("");
     const [phoneNo, setPhoneNo] = useState("");
