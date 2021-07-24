@@ -89,16 +89,18 @@ function Home() {
                             {StudentsListData.map(({ id, image, name, subject }) => {
                                 return (
                                     <>
-                                        <NavLink to={`/students/student-profile/${id}`} key={id}>
-                                        <div className="grid grid-cols-3" >
+                                        <div className="grid grid-cols-3" key={id}>
                                             <div className="col-span-1">
-                                                <div className="flex flex-row space-x-3">
-                                                    <img className="w-16 h-16 rounded-full mb-3 object-cover mr-2" src={image} alt="" />
-                                                    <div className="flex-col  xl:flex 2xl:flex">
-                                                        <h1 className="text-gray-700 font-semibold">{name}</h1>
-                                                        <span className="text-sm text-gray-500">{subject}</span>
+                                                <NavLink to={`/students/student-profile/${id}`} >
+                                                    <div className="flex flex-row space-x-3">
+                                                        <img className="w-16 h-16 rounded-full mb-3 object-cover mr-2" src={image} alt="" />
+                                                        <div className="flex-col  xl:flex 2xl:flex">
+                                                            <h1 className="text-gray-700 font-semibold">{name}</h1>
+                                                            <span className="text-sm text-gray-500">{subject}</span>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </NavLink>
+
                                             </div>
 
                                             <div className="col-span-1 ">
@@ -114,10 +116,6 @@ function Home() {
 
                                             </div>
                                         </div>
-                                        </NavLink>
-
-
-
                                     </>
                                 )
                             })}
