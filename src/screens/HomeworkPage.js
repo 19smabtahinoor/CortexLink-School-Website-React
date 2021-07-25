@@ -70,7 +70,7 @@ function HomeworkPage() {
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-15">
-                        <div className="overflow-auto  mb-8">
+                        <div className="bubble__graph overflow-auto  mb-8">
                             <BubbleGraph />
                         </div>
                         <div className="overflow-auto mb-8">
@@ -106,7 +106,7 @@ function HomeworkPage() {
                                 </div>
 
                             </div>
-                            <div className="overflow-auto  mb-8">
+                            <div className="bubble__graph bubble__Graph_2 overflow-auto  mb-8">
                                 <BubbleGraph />
                             </div>
                         </div>
@@ -219,6 +219,82 @@ const Wrapper = styled.section`
             object-fit:contain;
         }
     }
+
+    .bubble__graph {
+    width: 630px;
+    background-color: #fff;
+    }
+     .bubble__graph::-webkit-scrollbar{
+      width:1px !important;
+    }
+    .bubble__graph::-webkit-scrollbar-thumb{
+      background:#fafafa;
+      border-radius:50px;
+    }
+    @media only screen and (max-width:1665px){
+    .bubble__graph{
+      width:580px !important;
+      overflow: auto;
+    }
+    }
+    @media only screen and (max-width:1510px){
+    .bubble__graph{
+      width:530px !important;
+      overflow: auto;
+    }
+    }
+    @media only screen and (min-width:1200px)and (max-width:1510px){
+    .bubble__graph{
+      width:480px !important;
+      overflow: auto;
+    }
+    }
+    @media only screen and (min-width:900px)and (max-width:1200px){
+    .bubble__graph{
+      width:400px !important;
+      overflow: auto;
+    }
+    }
+    @media only screen and (max-width:500px){
+    .bubble__graph{
+      width:400px !important;
+      overflow: auto;
+    
+    }
+
+    .user-select-none.svg-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    }
+
+    .bubble__Graph_2{
+        margin-left:-35px;
+    }
+    }
+
+    @media only screen and (max-width:425px){
+    .bubble__graph{
+       width:340px !important;
+      overflow: auto;
+    }
+    .bubble__Graph_2{
+        margin-left:-35px;
+    }
+    }
+    @media only screen and (max-width:375px){
+    .bubble__graph{
+      width:300px !important;
+      overflow: auto;
+    }
+    }
+    @media only screen and (max-width:320px){
+    .bubble__graph{
+      width:300px !important;
+      overflow: auto;
+    }
+    }
+    
 }
 `
 

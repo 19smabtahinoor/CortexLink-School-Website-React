@@ -20,6 +20,7 @@ import HomeworkPage from './screens/HomeworkPage';
 import CourseStudentsPage from './screens/CourseStudentsPage';
 import TeachersPage from './screens/TeachersPage';
 import Assignments from './screens/Assignments';
+import AllCourses from './screens/AllCourses';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import ErrorPage from './components/ErrorPage';
@@ -45,6 +46,9 @@ function App() {
                             </Route>
                             <Route exact path="/mycourses">
                                 {<MyCourse />}
+                            </Route>
+                            <Route exact path="/allcourses">
+                                {<AllCourses />}
                             </Route>
                             <Route exact path="/messages">
                                 {<MessagesPage />}

@@ -22,6 +22,8 @@ const useStyles = makeStyles((theme) => ({
         minWidth: 220,
         border: 1,
         borderRadius: 3,
+        maringTop:50,
+        maringBottom:50,
     },
 }));
 
@@ -162,7 +164,7 @@ function ParentsDashboard() {
                                 })}
                             </div>
                             <div className="mt-5 flex justify-center">
-                                <NavLink className="w-full rounded-lg py-3 px-4 text-white bg-blue-800 flex justify-center" to="/mycourses">View all courses</NavLink>
+                                <NavLink className="w-full rounded-lg py-3 px-4 text-white bg-blue-800 flex justify-center" to="/allcourses">View all courses</NavLink>
                             </div>
                             
 
@@ -184,19 +186,20 @@ function ParentsDashboard() {
                                         onChange={handleChange}
                                         label="Select Course"
                                     >
-                                        <MenuItem value="">
-                                            <em>None</em>
-                                        </MenuItem>
-                                        <MenuItem value={10}>Mathmetics</MenuItem>
-                                        <MenuItem value={20}>Science</MenuItem>
-                                        <MenuItem value={30}>Computer</MenuItem>
+                                        <div className="">
+                                            <MenuItem value="">
+                                                <em>None</em>
+                                            </MenuItem>
+                                            <MenuItem value={10}>Mathmetics</MenuItem>
+                                            <MenuItem value={20}>Science</MenuItem>
+                                        </div>
                                     </Select>
                                 </FormControl>
                             </div>
 
 
 
-                            <div className="rounded-xl shadow-xl overflow-auto">
+                            <div className="rounded-xl overflow-auto">
                                 {data.map((element, index) => {
                                     return <BarGraph key={element.id} {...element} />;
                                 })}

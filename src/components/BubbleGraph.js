@@ -28,7 +28,7 @@ function BubbleGraph() {
     };
     let data = [trace1];
     let layout = {
-        width: 450,
+        width: 630,
         height: 400,
         title: "<b>Proficiency of students in diff.concepts</b>",
         margin: {

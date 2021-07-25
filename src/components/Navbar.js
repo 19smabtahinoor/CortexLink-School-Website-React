@@ -6,14 +6,13 @@ import {NavLink} from 'react-router-dom';
 function Navbar() {
 
     const [notificationData] = useState(notifications.Notifications)
-
     const [notificationChange,setNotificationChange] = useState(true)
-
+    const [dropdown,setDropdown] = useState(true)
     return (
         <Wrapper>
             <header className="header py-3">
                 <div className="flex flex-row-reverse items-center">
-                        <div className=" flex flex-row items-center pr-4 space-x-4 mr-6">
+                    <div className=" flex flex-row items-center pr-4 space-x-4 mr-6 cursor-pointer" onClick={() => setDropdown(!dropdown)}>
                             <i className="header__icons bg-white p-3 rounded-full fas fa-user cursor-pointer"></i>
                             <div className="">
                                 <h3 className="font-semibold text-gray-600 cursor-pointer">Username</h3>
@@ -62,7 +61,16 @@ function Navbar() {
                     </div>
 
                 </div>}
-               
+
+                {/* dropdown  */}
+
+                {!dropdown && <div className="bg-white rounded-xl shadow-xl box-border p-6 absolute top-20 right-5 md:right-10 lg:right-10 xl:right-10 2xl:right-10 h-98 z-50">
+
+                    <div className="flex items-center space-x-3 pb-2 cursor-pointer">
+                        <span><i className="fas fa-sign-out-alt text-gray-600 text-lg"></i></span>
+                        <h1 className="text-gray-600 font-semibold">Logout</h1>
+                    </div>
+                </div>}
             </header>
 
         </Wrapper>

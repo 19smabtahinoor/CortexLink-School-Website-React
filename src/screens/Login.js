@@ -19,7 +19,7 @@ function Login() {
                         <div className="col-span-1 order-2 lg:order-1 xl:order-1 2xl:order-1">
                             <div className="">
                                 <h1 className="signup__heading font-bold text-2xl text-center">
-                                    Sign Up to your cortexlink account
+                                    Login to your cortexlink account
                                 </h1>
 
                                 <div className="flex justify-center space-x-8 my-6">
@@ -27,7 +27,7 @@ function Login() {
                                     <div className="flex items-center space-x-3">
                                         <input className="w-4 h-4" type="radio" id="teachers" name="radio__option" value="Teacher" />
                                         <div className="flex flex-col">
-                                            <span className="text-gray-600 text-sm">Sign Up as</span>
+                                            <span className="text-gray-600 text-sm">Login as</span>
                                             <label htmlFor="teachers" className="text-gray-700 font-semibold text-xl">Teacher</label>
                                         </div>
 
@@ -36,7 +36,7 @@ function Login() {
                                     <div className="flex items-center space-x-3">
                                         <input className="w-4 h-4" type="radio" id="parents" name="radio__option" value="Parents" />
                                         <div className="flex flex-col">
-                                            <span className="text-gray-600 text-sm">Sign Up as</span>
+                                            <span className="text-gray-600 text-sm">Login as</span>
                                             <label htmlFor="parents" className="text-gray-700 font-semibold text-xl">Parents</label>
                                         </div>
 
@@ -51,7 +51,7 @@ function Login() {
                                 <form action="" className="flex flex-col">
                                     <input type="text" className="w-full my-3 rounded-full px-5 py-3 bg-transparent border border-gray-300 outline-none focus:border-blue-800" placeholder="Username" />
                                     <input type="password" className="w-full my-3 rounded-full px-5 py-3 bg-transparent border border-gray-300 outline-none focus:border focus:border-blue-800" placeholder="Password" />
-                                    <button className="bg-blue-800 rounded-full px-8 py-3 flex justify-center text-white font-semibold w-40 mx-auto my-3">Sign Up</button>
+                                    <button className="bg-blue-800 rounded-full px-8 py-3 flex justify-center text-white font-semibold w-40 mx-auto my-3">Login</button>
                                 </form>
 
 
@@ -60,8 +60,8 @@ function Login() {
                                     <h3 className="flex flex-row items-center justify-center text-gray-800 text-xl"><span className="w-48 border-b border-gray-400 mr-2"></span>Or <span className="w-48 border-b border-gray-400 ml-2"></span></h3>
 
                                     <div className="flex space-x-3 justify-center my-4">
-                                        <Button className="signup__specialbtn" startIcon={<RiFacebookCircleFill />}>Sign In With</Button>
-                                        <Button className="signup__specialbtn" startIcon={<RiGoogleFill />}>Sign In With</Button>
+                                        <Button className="signup__specialbtn" startIcon={<RiFacebookCircleFill />}>Log In With</Button>
+                                        <Button className="signup__specialbtn" startIcon={<RiGoogleFill />}>Log In With</Button>
                                     </div>
 
                                 </div>
