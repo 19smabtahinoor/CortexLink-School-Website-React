@@ -19,6 +19,7 @@ import StudentProfile from './screens/StudentProfile';
 import HomeworkPage from './screens/HomeworkPage'; 
 import CourseStudentsPage from './screens/CourseStudentsPage';
 import TeachersPage from './screens/TeachersPage';
+import Assignments from './screens/Assignments';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import ErrorPage from './components/ErrorPage';
@@ -27,7 +28,7 @@ function App() {
 
     return (
         <BrowserRouter>
-            <main className="max-w-screen-2xl mx-auto">
+            <main className="max-w-screen-4xl mx-auto">
                 <div className="grid grid-cols-6">
                     <div className="col-span-1">
                         <Sidebar />
@@ -78,15 +79,16 @@ function App() {
                             <Route exact path="/student-profile">
                                 {<StudentProfile />}
                             </Route>
-                            <Route exact path="/homework">
-                                {<HomeworkPage />}
-                            </Route>
                             <Route exact path="/enrolled-students">
                                 {<CourseStudentsPage />}
+                            </Route>
+                            <Route exact path="/assignments">
+                                {<Assignments />}
                             </Route>
                             <Route exact path="/coursedetails/:id" children={<CourseDetails />}></Route>
                             <Route exact path="/teachers/teacher-profile/:id" children={<TeachersProfile />}></Route>
                             <Route exact path="/students/student-profile/:id" children={<StudentProfile />}></Route>
+                            <Route exact path="/assignments/homework/:id" children={<HomeworkPage/>}></Route>
                             <Route exact path="*">{<ErrorPage/>}</Route>
                         </Switch>
                     </div>

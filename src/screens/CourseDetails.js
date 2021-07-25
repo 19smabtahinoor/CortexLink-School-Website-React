@@ -59,8 +59,10 @@ function CourseDetails() {
                                 <h3 className="my__courses__students__number text-lg pr-8 hidden md:block lg:block xl:block 2xl:block">{studentsNumber}</h3>
                             </NavLink>
 
+                            <NavLink to="/assignments">
                             <Button className="course__assignments__button" startIcon={<FaBook className="text-white" />}>Assignements</Button>
-                        </div>
+                            </NavLink>
+                        </div>  
                         {/* left Side  end*/}
 
                         {/* Right Side Start */}

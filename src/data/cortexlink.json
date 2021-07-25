@@ -462,5 +462,52 @@
       "address": "Jakarta,Indonesia",
       "email": "justinhope@gmail.com"
     }
+  ],
+  "AssignmentsList":[
+    {
+      "id": 1,
+      "image": "../../assets/chat8.jpg",
+      "name": "Angelica Ramos",
+      "email": "justinhope@gmail.com",
+      "city":"Jakarta",
+      "grade":"10th",
+      "assignment":"Assignment Details"
+    },
+    {
+      "id": 2,
+      "image": "../../assets/chat6.jpg",
+      "name": "Kare Hope",
+      "email": "justinhope@gmail.com",
+      "city":"Jakarta",
+      "grade":"10th",
+      "assignment":"Assignment Details"
+    },
+    {
+      "id": 3,
+      "image": "../../assets/chat7.jpg",
+      "name": "Sergio Ramos",
+      "email": "justinhope@gmail.com",
+      "city":"Jakarta",
+      "grade":"10th",
+      "assignment":"Assignment Details"
+    },
+    {
+      "id": 4,
+      "image": "../../assets/chat3.jpg",
+      "name": "Samuda Baruma",
+      "email": "justinhope@gmail.com",
+      "city":"Jakarta",
+      "grade":"10th",
+      "assignment":"Assignment Details"
+    },
+    {
+      "id": 5,
+      "image": "../../assets/chat2.jpg",
+      "name": "Pasuk Mazda",
+      "email": "justinhope@gmail.com",
+      "city":"Jakarta",
+      "grade":"10th",
+      "assignment":"Assignment Details"
+    }
   ]
 }

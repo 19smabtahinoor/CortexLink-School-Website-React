@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from 'styled-components';
 import Footer from '../components/Footer';
 import HomeWorkEquaGraph from '../components/HomeworkEquaGraph';
@@ -10,6 +10,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import StudentId from '../data/cortexlink.json';
+import AllAssignments from '../data/cortexlink.json';
+import { useParams } from "react-router-dom"
 
 // Make Select Option 
 const useStyles = makeStyles((theme) => ({
@@ -47,12 +49,24 @@ function HomeworkPage() {
         setPopup(true)
     }
 
+
+    //individual page
+    const [name, setName] = useState("");
+
+
+    const { id } = useParams()
+    useEffect(() => {
+        const students = AllAssignments.AssignmentsList.find((element) => element.id === parseInt(id))
+        setName(students.name);
+    }, [id]);
     return (
+
+
         <>
             <Wrapper>
                 <section className="homework__section px-12 pb-12 -ml-20 md:-ml-24 lg:-ml-32 xl:m-0 2xl:m-0" >
                     <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row  pt-12 pb-12">
-                        <h1 className="homework__heading font-semibold text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl flex flex-grow">Homework</h1>
+                        <h1 className="homework__heading font-semibold text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl flex flex-grow">Homework of  <strong className="pl-2"> {name}</strong></h1>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-15">

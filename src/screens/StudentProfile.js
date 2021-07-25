@@ -101,7 +101,7 @@ function StudentProfile() {
                     </div>
 
                     {/* Close Button  */}
-                    <NavLink to="/" className="flex justify-end">
+                    <NavLink to="/students" className="flex justify-end">
                         <Button className="close__button">Close</Button>
                     </NavLink>
                     <Footer />

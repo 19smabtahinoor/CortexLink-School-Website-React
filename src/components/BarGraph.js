@@ -14,7 +14,7 @@ function BarGraph({ barColor, xaxis, yaxis }) {
     }
   ];
   let layout = {
-    width: 450,
+    width: 420,
     height: 400,
     title: "<b>Overall class proficiency in Fraction</b>",
     margin: {
