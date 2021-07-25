@@ -52,10 +52,12 @@ function Sidebar() {
                 </div>
             ) : (
                 <aside className="sidebar__wrapper hidden lg:inline-block">
-                    <div className="h-20">
-                        <img className="w-full" src="../../assets/logo.png" alt="logo" />
-                    </div>
-
+                    <NavLink to="/">
+                            <div className="h-20">
+                                <img className="w-full" src="../../assets/logo.png" alt="logo" />
+                            </div>
+                    </NavLink>
+                    
                     <div className="pl-6">
                         <ul>
                             <NavLink to="/" className="menu flex flex-row items-center space-x-3  pl-4 py-3 my-2" >
