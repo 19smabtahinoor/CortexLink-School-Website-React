@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Button } from '@material-ui/core';
-import AddIcon from '@material-ui/icons/Add';
 import Footer from '../components/Footer';
 import { NavLink } from 'react-router-dom';
 import { DataGrid } from '@material-ui/data-grid';
